@@ -1,6 +1,6 @@
 # Edge-Computing-school-project
 
-Backend code which needed to be installed into raspbery pi to run.
+Backend code which need to be installed into raspbery pi to run.
 
 The folder include the web app, machine learning model and some front-end stuff.
 
