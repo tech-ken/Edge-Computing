@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- CSS -->
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+  <!-- VENDOR SCRIPTS -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+  <title>Price My Food</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Price My Food</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/api">API Documentation</a></li>
+    </ul>
+  </div>
+</nav>
+<h1></h1>
+<div class="container">
+  <div class="row">
+    <form style="clear: both" class="prediction-form form-horizontal" id="predictionForm">
+      <div class="form-group col-sm-4">
+        <label for="title">Prediction is: </label>
+	<label id="prediction" name="prediction"></label>
+      </div>
+      <div class="form-group col-sm-12" style="text-align: center;">
+	      <button type="button" id="buttonPredict" class="btn btn-info">Predict</button>
+      </div>
+      <img id="foodImage" width="300" height="300"></img>
+    </form>
+  </div>
+</div>
+</body>
+</html>
